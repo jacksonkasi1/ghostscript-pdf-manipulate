@@ -1,6 +1,8 @@
+// App.jsx
+
 import { useState } from "react";
 import "./App.css";
-import { _GSPS2PDF } from "./lib/background.js";
+import { _processPDF } from "./lib/background.js";
 
 function loadPDFData(response, filename) {
   return new Promise((resolve, reject) => {
@@ -18,144 +20,176 @@ function loadPDFData(response, filename) {
 }
 
 function App() {
-  const [state, setState] = useState("init");
+  const [state, setState] = useState("init"); // Possible states: init, selected, loading, toBeDownloaded, error
   const [file, setFile] = useState(undefined);
   const [downloadLink, setDownloadLink] = useState(undefined);
+  const [conversionType, setConversionType] = useState("compress"); // Default to 'compress'
+  const [statusMessage, setStatusMessage] = useState("");
+  const [progress, setProgress] = useState({ inProgress: false, current: 0, total: 0 });
 
-  function compressPDF(pdf, filename) {
-    const dataObject = { psDataURL: pdf };
-    _GSPS2PDF(
+  /**
+   * Processes the selected PDF based on the chosen conversion type.
+   *
+   * @param {string} pdf - The URL of the PDF to process.
+   * @param {string} filename - The original filename of the PDF.
+   */
+  function processPDF(pdf, filename) {
+    const dataObject = { pdfDataURL: pdf };
+    setState("loading");
+    setStatusMessage("Processing PDF...");
+    _processPDF(
+      conversionType,
       dataObject,
       (element) => {
         console.log(element);
         setState("toBeDownloaded");
         loadPDFData(element, filename).then(({ pdfURL }) => {
           setDownloadLink(pdfURL);
+          setStatusMessage("Processing complete!");
+        }).catch((err) => {
+          console.error(err);
+          setState("error");
+          setStatusMessage("Failed to load processed PDF.");
         });
       },
-      (...args) => console.log("Progress:", JSON.stringify(args)),
-      (element) => console.log("Status Update:", JSON.stringify(element)),
+      (isComplete, current, total) => {
+        setProgress({ inProgress: !isComplete, current, total });
+      },
+      (element) => {
+        console.log("Status Update:", element);
+        setStatusMessage(element);
+      }
     );
   }
 
   const changeHandler = (event) => {
-    const file = event.target.files[0];
-    const url = window.URL.createObjectURL(file);
-    setFile({ filename: file.name, url });
-    setState("selected");
+    const uploadedFile = event.target.files[0];
+    if (uploadedFile) {
+      const url = window.URL.createObjectURL(uploadedFile);
+      setFile({ filename: uploadedFile.name, url });
+      setState("selected");
+      setDownloadLink(undefined);
+      setStatusMessage("");
+    }
   };
 
   const onSubmit = (event) => {
     event.preventDefault();
-    const { filename, url } = file;
-    compressPDF(url, filename);
-    setState("loading");
+    if (file && conversionType) {
+      const { filename, url } = file;
+      processPDF(url, filename);
+    } else {
+      setState("error");
+      setStatusMessage("Please select a file and conversion type.");
+    }
     return false;
   };
 
-  let minFileName =
-    file && file.filename && file.filename.replace(".pdf", "-min.pdf");
+  const getOutputFileName = () => {
+    if (file && file.filename) {
+      const baseName = file.filename.replace(/\.pdf$/i, "");
+      switch (conversionType) {
+        case "compress":
+          return `${baseName}-compressed.pdf`;
+        case "grayscale":
+          return `${baseName}-grayscale.pdf`;
+        case "cmyk":
+          return `${baseName}-cmyk.pdf`;
+        default:
+          return `${baseName}-processed.pdf`;
+      }
+    }
+    return "processed.pdf";
+  };
+
   return (
-    <>
-      <h1>Free Browser side PDF-Compressor</h1>
+    <div className="container">
+      <h1>Browser-side PDF Processor</h1>
       <p>
-        The best tool I know to compress PDF is{" "}
-        <a target={"_blank"} href={"https://ghostscript.com/"}>
-          Ghostscript
-        </a>{" "}
-        but this was not running in the browser. Until{" "}
-        <a target={"_blank"} href={"https://github.com/ochachacha/ps-wasm"}>
-          Ochachacha
-        </a>{" "}
-        ported the lib in{" "}
-        <a target={"_blank"} href={"https://webassembly.org/"}>
-          Webassembly
-        </a>
-        .
+        This tool allows you to <strong>compress</strong>, <strong>convert to grayscale</strong>, or <strong>convert to CMYK</strong> your PDF files directly in your browser using <a target="_blank" href="https://ghostscript.com/">Ghostscript</a> and <a target="_blank" href="https://webassembly.org/">WebAssembly</a>.
       </p>
-      <p>
-        Based on his amazing work, I built this{" "}
-        <a
-          href={
-            "https://github.com/laurentmmeyer/ghostscript-pdf-compress.wasm"
-          }
-          target={"_blank"}
-        >
-          demo
-        </a>
-        . It's running on Vite and React. It imports the WASM on the fly when
-        you want compress a PDF.
-      </p>
-      <p>
-        Be aware that the Webassembly binary is weighting <b>18MB</b>.
-      </p>
-      <p>
-        <i>
-          Secure and private by design: the data never leaves your computer.
-        </i>
-      </p>
-      {state !== "loading" && state !== "toBeDownloaded" && (
-        <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className="form">
+        <div className="form-group">
+          <label htmlFor="file">Choose PDF to process:</label>
           <input
             type="file"
-            accept={"application/pdf"}
+            accept="application/pdf"
             name="file"
             onChange={changeHandler}
-            id={"file"}
+            id="file"
+            className="file-input"
+            required
           />
-          <div className={"label padded-button"}>
-            <label htmlFor={"file"}>
-              {!file || !file.filename
-                ? `Choose PDF to compress`
-                : file.filename}
-            </label>
+          <div className="file-label">
+            {file && file.filename ? file.filename : "No file chosen"}
           </div>
-          {state === "selected" && (
-            <div className={"success-button padded-button padding-top"}>
-              <input
-                className={"button"}
-                type="submit"
-                value={"🚀 Compress this PDF in the browser! 🚀"}
-              />
-            </div>
+        </div>
+        <div className="form-group">
+          <label htmlFor="conversionType">Select Operation:</label>
+          <select
+            id="conversionType"
+            value={conversionType}
+            onChange={(e) => setConversionType(e.target.value)}
+            className="dropdown"
+          >
+            <option value="compress">Compress PDF</option>
+            <option value="grayscale">Convert to Grayscale</option>
+            <option value="cmyk">Convert to CMYK</option>
+          </select>
+        </div>
+        <div className="form-group">
+          <button type="submit" className="button">
+            {conversionType === "compress" && "🚀 Compress PDF 🚀"}
+            {conversionType === "grayscale" && "🔄 Convert to Grayscale 🔄"}
+            {conversionType === "cmyk" && "🔄 Convert to CMYK 🔄"}
+          </button>
+        </div>
+      </form>
+      {state === "loading" && (
+        <div className="status">
+          <p>{statusMessage}</p>
+          {progress.inProgress && (
+            <progress value={progress.current} max={progress.total}></progress>
           )}
-        </form>
+        </div>
       )}
-      {state === "loading" && "Loading...."}
-      {state === "toBeDownloaded" && (
-        <>
-          <div className={"success-button padded-button"}>
-            <a href={downloadLink} download={minFileName}>
-              {`📄 Download ${minFileName} 📄`}
-            </a>
-          </div>
-          <div className={"blue padded-button padding-top"}>
-            <a href={"./"}>{`🔁 Compress another PDF 🔁`}</a>
-          </div>
-        </>
+      {state === "toBeDownloaded" && downloadLink && (
+        <div className="download-section">
+          <a href={downloadLink} download={getOutputFileName()} className="download-button">
+            📥 Download {getOutputFileName()} 📥
+          </a>
+          <a href="./" className="reset-button">
+            🔁 Process Another PDF 🔁
+          </a>
+        </div>
       )}
-      <p>
-        Everything is open-source and you can contribute{" "}
-        <a
-          href={
-            "https://github.com/laurentmmeyer/ghostscript-pdf-compress.wasm"
-          }
-          target={"_blank"}
-        >
-          here
-        </a>
-        .
-      </p>
-      <br />
-      <p>
-        <i>This website uses no tracking, no cookies, no adtech.</i>
-      </p>
-      <p>
-        <a target={"_blank"} href={"https://meyer-laurent.com"}>
-          About me
-        </a>
-      </p>
-    </>
+      {state === "error" && (
+        <div className="error">
+          <p>{statusMessage}</p>
+        </div>
+      )}
+      <footer>
+        <p>
+          Everything is open-source and you can contribute{" "}
+          <a
+            href="https://github.com/laurentmmeyer/ghostscript-pdf-processor.wasm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
+          .
+        </p>
+        <p>
+          <i>This website uses no tracking, no cookies, no adtech.</i>
+        </p>
+        <p>
+          <a target="_blank" href="https://meyer-laurent.com">
+            About me
+          </a>
+        </p>
+      </footer>
+    </div>
   );
 }
 
