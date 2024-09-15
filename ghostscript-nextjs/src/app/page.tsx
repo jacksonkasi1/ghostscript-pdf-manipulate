@@ -3,7 +3,7 @@
 'use client';
 
 import { useState } from "react";
-import { processPDF, Operation, DataStruct, ResponseElement } from "../lib/background";
+import { processPDF, Operation, DataStruct, ResponseElement } from "@/lib/background";
 import Head from "next/head";
 
 interface FileState {

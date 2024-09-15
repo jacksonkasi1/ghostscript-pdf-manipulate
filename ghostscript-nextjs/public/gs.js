@@ -1639,7 +1639,8 @@ function isDataURI(filename) {
     : filename.indexOf(dataURIPrefix) === 0;
 }
 
-var wasmBinaryFile = await import("./gs.wasm?url");
+// var wasmBinaryFile = await import("./gs.wasm?url");
+const wasmBinaryFile = await WebAssembly.instantiateStreaming(fetch('/gs.wasm'));
 // if (!isDataURI(wasmBinaryFile)) {
 //   wasmBinaryFile = locateFile(wasmBinaryFile);
 // }

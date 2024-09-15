@@ -26,10 +26,25 @@ declare global {
 let Module: any;
 
 /**
- * Dynamically loads the Ghostscript WebAssembly module.
+ * Dynamically loads the Ghostscript WebAssembly script.
  */
-function loadScript() {
-  return import('./gs.js');
+async function loadScript(): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = '/gs.js'; // Load from public folder
+    script.async = true;
+
+    script.onload = () => {
+      console.log('Ghostscript loaded successfully.');
+      resolve();
+    };
+
+    script.onerror = () => {
+      reject(new Error('Failed to load Ghostscript.'));
+    };
+
+    document.body.appendChild(script);
+  });
 }
 
 /**
@@ -41,19 +56,18 @@ function loadScript() {
  * @param {ProgressCallback} progressCallback - Called to report progress.
  * @param {StatusUpdateCallback} statusUpdateCallback - Called to report status updates.
  */
-export function processPDF(
+export async function processPDF(
   operation: Operation,
   dataStruct: DataStruct,
   responseCallback: ResponseCallback,
   progressCallback: ProgressCallback,
   statusUpdateCallback: StatusUpdateCallback
 ) {
-  // Define Ghostscript arguments for each operation
   const ghostscriptArgs: Record<Operation, string[]> = {
     compress: [
       "-sDEVICE=pdfwrite",
       "-dCompatibilityLevel=1.4",
-      "-dPDFSETTINGS=/ebook", // Adjust compression level as needed
+      "-dPDFSETTINGS=/ebook",
       "-dNOPAUSE",
       "-dQUIET",
       "-dBATCH",
@@ -85,19 +99,16 @@ export function processPDF(
     ],
   };
 
-  // Validate operation
   if (!ghostscriptArgs[operation]) {
     throw new Error("Invalid PDF processing operation.");
   }
 
-  // First, download the PDF data
   const xhr = new XMLHttpRequest();
   xhr.open("GET", dataStruct.pdfDataURL);
   xhr.responseType = "arraybuffer";
-  xhr.onload = function () {
-    // Release the URL
+  xhr.onload = async function () {
     window.URL.revokeObjectURL(dataStruct.pdfDataURL);
-    // Set up EMScripten environment
+
     Module = {
       preRun: [
         function () {
@@ -109,7 +120,7 @@ export function processPDF(
         function () {
           const FS = window.FS;
           const outputFileName = ghostscriptArgs[operation].find(arg => arg.startsWith("-sOutputFile="))!.split("=")[1];
-          const uarray = FS.readFile(outputFileName, { encoding: "binary" }); // Uint8Array
+          const uarray = FS.readFile(outputFileName, { encoding: "binary" });
           const blob = new Blob([uarray], { type: "application/octet-stream" });
           const pdfDataURL = window.URL.createObjectURL(blob);
           responseCallback({ pdfDataURL, url: dataStruct.url });
@@ -130,7 +141,6 @@ export function processPDF(
         const m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
         const now = Date.now();
         if (m && now - Module.setStatus.last.time < 30)
-          // If this is a progress update, skip it if too soon
           return;
         Module.setStatus.last.time = now;
         Module.setStatus.last.text = text;
@@ -146,7 +156,9 @@ export function processPDF(
     };
     Module.setStatus("Loading Ghostscript...");
     window.Module = Module;
-    loadScript();
+
+    // Load the Ghostscript WebAssembly file
+    await loadScript();
   };
   xhr.send();
 }
