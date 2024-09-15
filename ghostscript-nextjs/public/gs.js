@@ -1639,8 +1639,9 @@ function isDataURI(filename) {
     : filename.indexOf(dataURIPrefix) === 0;
 }
 
-// var wasmBinaryFile = await import("./gs.wasm?url");
-const wasmBinaryFile = await WebAssembly.instantiateStreaming(fetch('/gs.wasm'));
+async function initializeWasm() {
+var wasmBinaryFile = await import("./gs.wasm?url");
+
 // if (!isDataURI(wasmBinaryFile)) {
 //   wasmBinaryFile = locateFile(wasmBinaryFile);
 // }
@@ -9562,3 +9563,10 @@ if (Module["noInitialRun"]) {
 run();
 
 // {{MODULE_ADDITIONS}}
+
+}
+
+// Call the async function to initialize the WASM file
+initializeWasm().catch((err) => {
+  console.error("Error initializing WASM:", err);
+});
