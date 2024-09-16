@@ -1,19 +1,21 @@
 from flask import Flask, request, jsonify, send_file
-import pdfplumber
+from flask_cors import CORS  # Import CORS
+import fitz  # PyMuPDF
 import os
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
+
 UPLOAD_FOLDER = './uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 def extract_pdf_data(file_path):
     extracted_text = ""
-    with pdfplumber.open(file_path) as pdf:
-        for page in pdf.pages:
-            extracted_text += page.extract_text() + "\n"
-            # You can also extract tables from the PDF
-            # tables = page.extract_tables()
-            # Handle table extraction as needed
+    with fitz.open(file_path) as pdf:
+        for page_num in range(pdf.page_count):
+            page = pdf[page_num]
+            extracted_text += page.get_text("text")  # Extract text from page
+            extracted_text += "\n\n"  # Add spacing between pages
     return extracted_text
 
 @app.route('/upload', methods=['POST'])

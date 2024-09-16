@@ -1,0 +1,998 @@
+Report Status    
+Male
+30 Years
+:
+:
+:
+:
+Age
+Gender
+Reported        
+P
+14/5/2023  11:03:00AM
+U
+439854467
+   DUMMY
+:
+:
+:
+:
+:
+Name        
+Lab No.    
+Ref By 
+Collected       
+A/c Status 
+16/5/2023  1:36:25PM
+Final
+Collected at            
+:
+Processed at             
+:
+LPL-ROHINI (NATIONAL REFERENCE LAB)
+National Reference laboratory, Block E, Sector 
+18, ROHINI
+DELHI 110085
+LPL-NATIONAL REFERENCE LAB
+National Reference laboratory, Block E, 
+Sector 18, Rohini, New Delhi -110085
+Test Report      
+Test Name
+Results
+Units
+Bio. Ref. Interval
+SwasthFit Super 4
+COMPLETE BLOOD COUNT;CBC
+Hemoglobin
+(Photometry)
+ 13.00 - 17.00 
+g/dL
+15.00
+Packed Cell Volume (PCV)
+(Calculated)
+ 40.00 - 50.00 
+%
+45.00
+RBC Count
+(Electrical Impedence)
+ 4.50 - 5.50 
+mill/mm3
+4.50
+MCV
+(Electrical Impedence)
+ 83.00 - 101.00 
+fL
+90.00
+MCH
+(Calculated)
+ 27.00 - 32.00 
+pg
+32.00
+MCHC
+(Calculated)
+ 31.50 - 34.50 
+g/dL
+33.00
+Red Cell Distribution Width (RDW)
+(Electrical Impedence)
+ 11.60 - 14.00 
+%
+14.00
+Total Leukocyte Count  (TLC)
+(Electrical Impedence)
+ 4.00 - 10.00 
+thou/mm3
+8.00
+Differential Leucocyte Count (DLC)
+(VCS Technology)
+ 40.00 - 80.00 
+Segmented Neutrophils
+%
+60.00
+ 20.00 - 40.00 
+Lymphocytes
+%
+30.00
+ 2.00 - 10.00 
+Monocytes
+%
+5.00
+ 1.00 - 6.00 
+Eosinophils
+%
+5.00
+ <2.00 
+Basophils
+%
+0.00
+Absolute Leucocyte Count
+(Calculated)
+ 2.00 - 7.00 
+Neutrophils
+thou/mm3
+4.80
+ 1.00 - 3.00 
+Lymphocytes
+thou/mm3
+2.40
+ 0.20 - 1.00 
+Monocytes
+thou/mm3
+0.40
+ 0.02 - 0.50 
+Eosinophils
+thou/mm3
+0.40
+ 0.02 - 0.10 
+Basophils
+thou/mm3
+0.00
+Platelet Count
+(Electrical impedence)
+ 150.00 - 410.00 
+thou/mm3
+200
+Mean Platelet Volume
+(Electrical Impedence)
+ 6.5 - 12.0 
+fL
+10.0
+*439854467*
+.
+Page 1 of 10
+
+
+Report Status    
+Male
+30 Years
+:
+:
+:
+:
+Age
+Gender
+Reported        
+P
+14/5/2023  11:03:00AM
+U
+439854467
+   DUMMY
+:
+:
+:
+:
+:
+Name        
+Lab No.    
+Ref By 
+Collected       
+A/c Status 
+16/5/2023  1:36:25PM
+Final
+Collected at            
+:
+Processed at             
+:
+LPL-ROHINI (NATIONAL REFERENCE LAB)
+National Reference laboratory, Block E, Sector 
+18, ROHINI
+DELHI 110085
+LPL-NATIONAL REFERENCE LAB
+National Reference laboratory, Block E, 
+Sector 18, Rohini, New Delhi -110085
+Test Report      
+Test Name
+Results
+Units
+Bio. Ref. Interval
+Note
+1. As per the recommendation of International council for Standardization in Hematology, the differential
+    leucocyte counts are additionally being reported as absolute numbers of each cell in per unit volume of
+    blood  
+                    
+2. Test conducted on EDTA whole blood
+*439854467*
+.
+Page 2 of 10
+
+
+Report Status    
+Male
+30 Years
+:
+:
+:
+:
+Age
+Gender
+Reported        
+P
+14/5/2023  11:03:00AM
+U
+439854467
+   DUMMY
+:
+:
+:
+:
+:
+Name        
+Lab No.    
+Ref By 
+Collected       
+A/c Status 
+16/5/2023  1:36:25PM
+Final
+Collected at            
+:
+Processed at             
+:
+LPL-ROHINI (NATIONAL REFERENCE LAB)
+National Reference laboratory, Block E, Sector 
+18, ROHINI
+DELHI 110085
+LPL-NATIONAL REFERENCE LAB
+National Reference laboratory, Block E, 
+Sector 18, Rohini, New Delhi -110085
+Test Report 
+Test Name
+Results
+Units
+Bio. Ref. Interval
+LIVER & KIDNEY PANEL, SERUM
+0.90
+Creatinine
+(Modified Jaffe,Kinetic)
+ 0.70 - 1.30 
+mg/dL
+118
+GFR Estimated
+(CKD EPI Equation 2021)
+ >59 
+mL/min/1.73m2
+G1
+GFR Category
+(KDIGO Guideline 2012)
+  
+20.00
+Urea
+(Urease UV)
+ 13.00 - 43.00 
+mg/dL
+9.34
+Urea Nitrogen  Blood
+(Calculated)
+ 6.00 - 20.00 
+mg/dL
+10
+BUN/Creatinine Ratio
+(Calculated)
+  
+5.00
+Uric Acid
+(Uricase)
+ 3.50 - 7.20 
+mg/dL
+11.0
+AST (SGOT)
+(IFCC without P5P)
+ 15.00 - 40.00 
+U/L
+21.0
+ALT (SGPT)
+(IFCC without P5P)
+ 10.00 - 49.00 
+U/L
+11.0
+GGTP
+(IFCC)
+ 0 - 73 
+U/L
+150.00
+Alkaline Phosphatase (ALP)
+(IFCC-AMP)
+ 30.00 - 120.00 
+U/L
+0.20
+Bilirubin  Total
+(Oxidation)
+ 0.30 - 1.20 
+mg/dL
+0.10
+Bilirubin  Direct
+(Oxidation)
+ <0.3 
+mg/dL
+0.10
+Bilirubin  Indirect
+(Calculated)
+ <1.10 
+mg/dL
+7.00
+Total Protein
+(Biuret)
+ 5.70 - 8.20 
+g/dL
+4.00
+Albumin
+(BCG)
+ 3.20 - 4.80 
+g/dL
+1.33
+A : G Ratio
+(Calculated)
+ 0.90 - 2.00 
+3.00
+Globulin(Calculated)
+ 2.0 - 3.5 
+gm/dL
+8.00
+Calcium, Total
+(Arsenazo III)
+ 8.70 - 10.40 
+mg/dL
+*439854467*
+.
+Page 3 of 10
+
+
+Report Status    
+Male
+30 Years
+:
+:
+:
+:
+Age
+Gender
+Reported        
+P
+14/5/2023  11:03:00AM
+U
+439854467
+   DUMMY
+:
+:
+:
+:
+:
+Name        
+Lab No.    
+Ref By 
+Collected       
+A/c Status 
+16/5/2023  1:36:25PM
+Final
+Collected at            
+:
+Processed at             
+:
+LPL-ROHINI (NATIONAL REFERENCE LAB)
+National Reference laboratory, Block E, Sector 
+18, ROHINI
+DELHI 110085
+LPL-NATIONAL REFERENCE LAB
+National Reference laboratory, Block E, 
+Sector 18, Rohini, New Delhi -110085
+Test Report 
+Test Name
+Results
+Units
+Bio. Ref. Interval
+4.00
+Phosphorus
+(Molybdate UV)
+ 2.40 - 5.10 
+mg/dL
+140.00
+Sodium
+(Indirect ISE)
+ 136.00 - 145.00 
+mEq/L
+5.00
+Potassium
+(Indirect ISE)
+ 3.50 - 5.10 
+mEq/L
+101.00
+Chloride
+(Indirect ISE)
+ 98.00 - 107.00 
+mEq/L
+Note
+1.
+Estimated GFR  (eGFR) calculated using the 2021 CKD-EPI creatinine equation and GFR Category 
+reported as per KDIGO guideline 2012. 
+2.
+eGFR category G1 or G2 does not fulfil the criteria for CKD, in the absence of evidence of kidney 
+damage
+3.
+The BUN-to-creatinine ratio is used to differentiate prerenal and postrenal azotemia from renal 
+azotemia. Because of considerable variability, it should be used only as a rough guide. Normally, the 
+BUN/creatinine ratio is about 10:1
+LIPID SCREEN, SERUM
+105.00
+Cholesterol, Total
+(CHO-POD)
+ <200.00 
+mg/dL
+130.00
+Triglycerides
+(GPO-POD)
+ <150.00 
+mg/dL
+46.00
+HDL  Cholesterol
+(Enzymatic Immunoinhibition)
+ >40.00 
+mg/dL
+33.00
+LDL Cholesterol, Calculated
+(Calculated)
+ <100.00 
+mg/dL
+26.00
+VLDL Cholesterol,Calculated
+(Calculated)
+ <30.00 
+mg/dL
+59
+Non-HDL Cholesterol
+(Calculated)
+ <130 
+mg/dL
+Note
+1.
+Measurements in the same patient can show physiological & analytical variations. Three serial 
+samples 1 week apart are recommended for Total Cholesterol, Triglycerides, HDL& LDL Cholesterol.
+2.
+Friedewald equation to calculate LDL cholesterol is most accurate when Triglyceride level is < 400 
+mg/dL. Measurement of Direct LDL cholesterol is recommended when Triglyceride level is > 400 
+mg/dL
+3.
+Lipid Association of India (LAI) recommends screening of all adults above the age of 20 years for 
+*439854467*
+.
+Page 4 of 10
+
+
+Report Status    
+Male
+30 Years
+:
+:
+:
+:
+Age
+Gender
+Reported        
+P
+14/5/2023  11:03:00AM
+U
+439854467
+   DUMMY
+:
+:
+:
+:
+:
+Name        
+Lab No.    
+Ref By 
+Collected       
+A/c Status 
+16/5/2023  1:36:25PM
+Final
+Collected at            
+:
+Processed at             
+:
+LPL-ROHINI (NATIONAL REFERENCE LAB)
+National Reference laboratory, Block E, Sector 
+18, ROHINI
+DELHI 110085
+LPL-NATIONAL REFERENCE LAB
+National Reference laboratory, Block E, 
+Sector 18, Rohini, New Delhi -110085
+Test Report 
+Test Name
+Results
+Units
+Bio. Ref. Interval
+Atherosclerotic Cardiovascular Disease (ASCVD) risk factors especially lipid profile. This should be 
+done earlier if there is family history of premature heart disease, dyslipidemia, obesity or other risk 
+factors
+4.
+Indians tend to have higher triglyceride levels & Lower HDL cholesterol combined with small dense 
+LDL particles, a pattern known as atherogenic dyslipidemia
+5.
+Non HDL Cholesterol comprises the cholesterol carried by all atherogenic particles, including LDL, IDL, 
+VLDL & VLDL remnants, Chylomicron remnants & Lp(a)
+6.
+LAI recommends LDL cholesterol as primary target and Non HDL cholesterol as co-primary treatment 
+target
+7.
+Apolipoprotein B is an, secondary lipid target for treatment once LDL & Non HDL goals have been 
+achieved
+8.
+Additional testing for Apolipoprotein B, hsCRP, Lp(a ) & LP-PLA2  should be considered among 
+patients with moderate risk for ASCVD for risk refinement
+ 
+Treatment Goals as per Lipid Association of India 2020
+   --------------------------------------------------------------------------------------------
+|   RISK     |              TREATMENT GOAL             |             CONSIDER THERAPY        |
+| CATEGORY   |-----------------------------------------|-------------------------------------|
+|            | LDL CHOLESTEROL    | NON HDL CHLOESTEROL| LDL CHOLESTEROL| NON HDL CHLOESTEROL|
+|            |  (LDL-C)(mg/dL)    | (NON HDL-C) (mg/dL)| (LDL-C)(mg/dL) | (NON HDL-C) (mg/dL)|
+|------------|--------------------|--------------------|----------------|--------------------|
+| Extreme    |       <50          |        <80         |                |                    |
+| Risk Group |(Optional goal ≤30) |(Optional goal ≤60) |      ≥50       |        ≥80         |
+| Category A |                    |                    |                |                    |
+|------------|--------------------|--------------------|----------------|--------------------|
+| Extreme    |                    |                    |                |                    |
+| Risk Group |       ≤30          |        ≤60         |      >30       |        >60         |
+| Category A |                    |                    |                |                    |
+|------------|--------------------|--------------------|----------------|--------------------|
+|   Very     |       <50          |        <80         |      ≥50       |        ≥80         |
+|   High     |                    |                    |                |                    |
+|------------|--------------------|--------------------|----------------|--------------------|
+|   High     |       <70          |        <100        |      ≥70       |        ≥100        |
+|------------|--------------------|--------------------|----------------|--------------------|
+| Moderate   |       <100         |        <130        |      ≥100      |        ≥130        |
+|------------|--------------------|--------------------|----------------|--------------------|
+|    Low     |       <100         |        <130        |      ≥130*     |        ≥160*       |
+ --------------------------------------------------------------------------------------------
+    *In low risk patient, consider therapy after an initial non-pharmacological intervention for at  
+     least 3 months
+*439854467*
+.
+Page 5 of 10
+
+
+Report Status    
+Male
+30 Years
+:
+:
+:
+:
+Age
+Gender
+Reported        
+P
+14/5/2023  11:03:00AM
+U
+439854467
+   DUMMY
+:
+:
+:
+:
+:
+Name        
+Lab No.    
+Ref By 
+Collected       
+A/c Status 
+16/5/2023  1:36:25PM
+Final
+Collected at            
+:
+Processed at             
+: LPL-ROHINI (NATIONAL REFERENCE LAB)
+National Reference laboratory, Block E, 
+Sector 18, ROHINI
+DELHI 110085
+LPL-NATIONAL REFERENCE LAB
+National Reference laboratory, Block E, 
+Sector 18, Rohini, New Delhi -110085
+Test Report      
+Test Name
+Results
+Units
+Bio. Ref. Interval
+HbA1c (GLYCOSYLATED HEMOGLOBIN), BLOOD
+(HPLC, NGSP certified)
+HbA1c
+5.3
+%
+4.00 - 5.60
+Estimated average glucose (eAG)
+105
+mg/dL
+Interpretation
+HbA1c result is suggestive of non diabetic adults (>=18 years)/ well controlled Diabetes in a known Diabetic
+Interpretation as per American Diabetes Association (ADA) Guidelines
+ 
+ ------------------------------------------------------------------------------------------
+| Reference Group | Non diabetic      | At risk       | Diagnosing  | Therapeutic goals    |
+|                 | adults >=18 years | (Prediabetes) | Diabetes    | for glycemic control |
+| ----------------|-------------------|---------------|-------------|----------------------|
+| HbA1c in %      | 4.0-5.6           | 5.7-6.4       | >= 6.5      | <7.0                 |
+ ------------------------------------------------------------------------------------------
+Note: Presence of Hemoglobin variants and/or conditions that affect red cell turnover must be considered, 
+particularly when the HbA1C result does not correlate with the patient’s blood glucose levels.
+ ---------------------------------------------------------------------------------
+| FACTORS THAT INTERFERE WITH HbA1C    | FACTORS THAT AFFECT INTERPRETATION       |
+| MEASUREMENT                          | OF HBA1C RESULTS                         |
+|--------------------------------------|------------------------------------------|
+| Hemoglobin variants,elevated fetal   | Any condition that shortens erythrocyte  |
+| hemoglobin (HbF) and chemically      | survival or decreases mean erythrocyte   |
+| modified derivatives of hemoglobin   | age (e.g.,recovery from acute blood loss,| 
+| (e.g. carbamylated Hb in patients    | hemolytic anemia, HbSS, HbCC, and HbSC)  |
+| with renal failure) can affect the   | will falsely lower HbA1c test results    |
+| accuracy of HbA1c measurements       | regardless of the assay method used.Iron | 
+|                                      | deficiency anemia is associated with     | 
+|                                      | higher HbA1c                             |
+ ---------------------------------------------------------------------------------
+*439854467*
+.
+Page 6 of 10
+
+
+Report Status    
+Male
+30 Years
+:
+:
+:
+:
+Age
+Gender
+Reported        
+P
+14/5/2023  11:03:00AM
+U
+439854467
+   DUMMY
+:
+:
+:
+:
+:
+Name        
+Lab No.    
+Ref By 
+Collected       
+A/c Status 
+16/5/2023  1:36:25PM
+Final
+:
+Collected at            
+:
+Processed at             
+LPL-ROHINI (NATIONAL REFERENCE LAB)
+National Reference laboratory, Block E, Sector 18, 
+ROHINI
+DELHI 110085
+LPL-NATIONAL REFERENCE LAB
+National Reference laboratory, Block E, 
+Sector 18, Rohini, New Delhi -110085
+Test Report      
+Test Name
+Results
+Units
+Bio. Ref. Interval
+GLUCOSE, FASTING (F), PLASMA
+(GOD POD)
+90.00
+Glucose Fasting
+ 70 - 100 
+mg/dL
+THYROID PROFILE,TOTAL, SERUM
+(CLIA)
+2.00
+T3, Total
+ 0.60 - 1.81 
+ng/mL
+4.00
+T4, Total
+ 5.01 - 12.45 
+µg/dL
+4.00
+TSH
+ 0.550 - 4.780 
+µIU/mL
+Note
+1.
+TSH levels are subject to circadian variation, reaching peak levels between 2 - 4.a.m. and at a 
+minimum between 6-10 pm . The variation is of the order of 50% .  hence time of the day has 
+influence on the measured serum TSH concentrations.
+2.
+Alteration in concentration of Thyroid hormone binding protein can profoundly affect Total T3 and/or 
+Total T4 levels especially in pregnancy and in patients on steroid therapy.
+3.
+Unbound fraction ( Free,T4 /Free,T3) of thyroid hormone is biologically active form and correlate 
+more closely with clinical status of the patient than total T4/T3 concentration
+4.
+Values <0.03 uIU/mL need to be clinically correlated due to presence of a rare TSH   variant in 
+some individuals
+*439854467*
+.
+Page 7 of 10
+
+
+Report Status    
+Male
+30 Years
+:
+:
+:
+:
+Age
+Gender
+Reported        
+P
+14/5/2023  11:03:00AM
+U
+439854467
+   DUMMY
+:
+:
+:
+:
+:
+Name        
+Lab No.    
+Ref By 
+Collected       
+A/c Status 
+16/5/2023  1:36:25PM
+Final
+LPL-NATIONAL REFERENCE LAB
+National Reference laboratory, Block E, 
+Sector 18, Rohini, New Delhi -110085
+:
+:
+Collected at            
+Processed at             
+LPL-ROHINI (NATIONAL REFERENCE LAB)
+National Reference laboratory, Block E, Sector 
+18, ROHINI
+DELHI 110085
+Test Report      
+Test Name
+Results
+Units
+Bio. Ref. Interval
+VITAMIN B12; CYANOCOBALAMIN, SERUM
+(CLIA)
+280.00
+pg/mL
+211.00 - 911.00
+Notes
+1.
+Interpretation of the result should be considered in relation to clinical circumstances.
+2.
+It is recommended to consider supplementary testing with plasma Methylmalonic acid (MMA) or 
+plasma homocysteine levels to determine biochemical cobalamin deficiency in presence of clinical 
+suspicion of deficiency but indeterminate levels. Homocysteine levels are more sensitive but MMA is 
+more specific
+3.
+False increase in Vitamin B12 levels may be observed in patients with intrinsic factor blocking 
+antibodies, MMA measurement should be considered in such patients
+4.
+The concentration of Vitamin B12 obtained with different assay methods cannot be used 
+interchangeably due to differences in assay methods and reagent specificity
+VITAMIN D, 25 - HYDROXY, SERUM
+(CLIA)
+85.00
+nmol/L
+75.00 - 250.00
+Interpretation 
+ -------------------------------------------------------------
+| LEVEL         | REFERENCE RANGE | COMMENTS                  |
+|               | IN nmol/L       |                           |
+|---------------|-----------------|---------------------------|
+| Deficient     | < 50            | High risk for developing  |
+|               |                 | bone disease              |
+|---------------|-----------------|---------------------------|
+| Insufficient  | 50-74           | Vitamin D concentration   |
+|               |                 | which normalizes          |
+|               |                 | Parathyroid hormone       |
+|               |                 | concentration             |
+|---------------|-----------------|---------------------------|
+| Sufficient    | 75-250          | Optimal concentration     | 
+|               |                 | for maximal health benefit|
+|---------------|-----------------|---------------------------|
+| Potential     | >250            | High risk for toxic       |
+| intoxication  |                 | effects                   |
+ -------------------------------------------------------------
+Note  
+·
+The assay measures both D2 (Ergocalciferol) and D3 (Cholecalciferol) metabolites of vitamin D.
+·
+25 (OH)D is influenced by sunlight, latitude, skin pigmentation, sunscreen use and hepatic function.
+·
+Optimal calcium absorption requires vitamin D 25 (OH) levels exceeding 75 nmol/L.
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)*439854467*
+.
+Page 8 of 10
+
+
+Report Status    
+Male
+30 Years
+:
+:
+:
+:
+Age
+Gender
+Reported        
+P
+14/5/2023  11:03:00AM
+U
+439854467
+   DUMMY
+:
+:
+:
+:
+:
+Name        
+Lab No.    
+Ref By 
+Collected       
+A/c Status 
+16/5/2023  1:36:25PM
+Final
+LPL-NATIONAL REFERENCE LAB
+National Reference laboratory, Block E, 
+Sector 18, Rohini, New Delhi -110085
+:
+:
+Collected at            
+Processed at             
+LPL-ROHINI (NATIONAL REFERENCE LAB)
+National Reference laboratory, Block E, Sector 
+18, ROHINI
+DELHI 110085
+Test Report      
+Test Name
+Results
+Units
+Bio. Ref. Interval
+·
+It shows seasonal variation, with values being 40-50% lower in winter than in summer. 
+·
+Levels vary with age and are increased in pregnancy. 
+·
+A new test Vitamin D, Ultrasensitive by LC-MS/MS is also available
+Comments
+Vitamin D promotes absorption of calcium and phosphorus and mineralization of bones and teeth. Deficiency 
+in children causes Rickets and in adults leads to Osteomalacia.  It can also lead to Hypocalcemia and 
+Tetany.  Vitamin D status is best determined  by measurement of 25 hydroxy vitamin D, as it is the major 
+circulating form and has longer half life (2-3 weeks) than 1,25 Dihydroxy vitamin D (5-8 hrs).
+Decreased Levels
+·
+Inadequate exposure to sunlight
+·
+Dietary deficiency
+·
+Vitamin D malabsorption
+·
+Severe  Hepatocellular disease
+·
+Drugs like Anticonvulsants
+·
+Nephrotic syndrome
+Increased levels
+Vitamin D intoxication 
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)*439854467*
+.
+Page 9 of 10
+
+
+Report Status    
+Male
+30 Years
+:
+:
+:
+:
+Age
+Gender
+Reported        
+P
+14/5/2023  11:03:00AM
+U
+439854467
+   DUMMY
+:
+:
+:
+:
+:
+Name        
+Lab No.    
+Ref By 
+Collected       
+A/c Status 
+16/5/2023  1:36:25PM
+Final
+LPL-NATIONAL REFERENCE LAB
+National Reference laboratory, Block E, 
+Sector 18, Rohini, New Delhi -110085
+:
+:
+Collected at            
+Processed at             
+LPL-ROHINI (NATIONAL REFERENCE LAB)
+National Reference laboratory, Block E, Sector 
+18, ROHINI
+DELHI 110085
+Test Report      
+Test Name
+Results
+Units
+Bio. Ref. Interval
+Dr Ajay Gupta
+MD, Pathology
+Technical Director - Hematology & 
+Immunology                                      
+NRL - Dr Lal PathLabs Ltd
+Dr Gurleen Oberoi
+DM(Hematopathology), MD, 
+DNB,MNAMS
+Consultant & Technical Lead 
+-Hematopathology                                        
+NRL - Dr Lal PathLabs Ltd
+Dr Himangshu Mazumdar
+MD, Biochemistry
+Sr. Consultant Biochemist                                               
+NRL - Dr Lal PathLabs Ltd
+Dr  Jatin Munjal
+MD,Pathology
+Consultant Pathologist                          
+Dr Lal PathLabs Ltd
+Dr Sarita Kumari Lal
+MD, Pathology
+Consultant Pathologist                          
+Dr Lal PathLabs Ltd
+Dr Sunanda
+MD, Pathology
+Consultant Pathologist                          
+Dr Lal PathLabs Ltd
+Dr Nimmi Kansal
+MD, Biochemistry
+Technical Director - Clinical 
+Chemistry & Biochemical Genetics                    
+NRL - Dr Lal PathLabs Ltd
+Dr.Kamal Modi
+MD, Biochemistry
+Consultant Biochemist                                                   
+NRL - Dr Lal PathLabs Ltd
+-------------------------------End of report --------------------------------
+AHEEEHAPMKHJBIFNLKIPAPNCBILLJCECCJLCIKPLNKEDFBFAPPAHEEEHA
+BNFFFNBPAPBLJHFGFGEKFOIPAOAHFHALBOJOBCJCJLEKMGJHNPBNFFFNB
+CIEGFGFNNNOJPBFOPFIAAJHFJCHEHEDBPKPHENFLMLKIOEFLBKHDEHANP
+DJMBGAFNBHOIEDIAPLOELFMFAFHLBLBFJIFEPBPAKCLJPDNLIFNBKEMEK
+KBMKLHFJONJFDIAMDMACKPJADENNOJCHKKMLAMMIPLKGKPNGKFFFOLMNG
+HGCBBEFNNICGDLHKIPAADIPBADHFOFAINDFCBKDLALIKOMNALNEIOGMKD
+DPIMIJFJALOBFHEIEKMBJEGHIHAFJBAKOHOPBLMIIJCHKJNLIJNFIDILD
+NJJJAMFNAINEBIHJGANHDMEILLBMFMBBKFCCAMNNIIKNOPNKBNFMBHILL
+NKLOFFFPCDCGFAAIONMIHIMKHGFFEKFBJFFLALPFOOBIOCNKDJPHNEKLJ
+PPNNOPFCEPFJJDCKJKAFGPNKADFKPNJHKEPFGBHLNKCKIGEOCNKKHMAMK
+LAIKOLFLGKCBMOCMPFNHEJEEINMFPAFBJMFEBFOFPNDMKPFKEPCIGCAEO
+MOICGJFCPLDGKEIMHHGNMMDEIEOPPFOEBEFPBLNOOLJBIKNJNKONHDICL
+MNNNNNEPKFDPBCCJOCFLHACHJBAHFHAHJKPFCMNLMKJCLFNMAHFHAHIKL
+APBBBPAPBBAAEJBCFMDKCBCFAGECHHCAONFFOLPGOLMHNLNNEDFHHBKHH
+HHHHHHHPHPPPHPPPPPPPPPHHPHPPPPPPPPPHHPPPPHHHPHPHHHHHPHPHP
+IMPORTANT INSTRUCTIONS
+ŸTest results released pertain to the specimen submitted.ŸAll test results are dependent on the quality of the sample received by the Laboratory . 
+ŸLaboratory investigations are only a tool to facilitate in arriving at a diagnosis and should be clinically correlated by the Referring Physician .ŸReport 
+delivery may be delayed due to unforeseen circumstances. Inconvenience is regretted .ŸCertain tests may require further testing at additional cost for 
+derivation of exact value. Kindly submit request within 72 hours post reporting.ŸTest results may show interlaboratory variations.ŸThe Courts/Forum 
+at Delhi shall have exclusive jurisdiction in all disputes/claims concerning the test(s) & or results of test(s).ŸTest results are not valid for medico legal 
+purposes.ŸThis is computer generated medical diagnostic report that has been validated by Authorized Medical Practitioner /Doctor.ŸThe report does 
+not need physical signature.
+(#) Sample drawn from outside source.
+If Test results are alarming or unexpected, client is advised to contact the Customer Care immediately for possible remedial action. 
+Tel: +91-11-49885050,Fax: - +91-11-2788-2134, E-mail: lalpathlabs@lalpathlabs.com 
+National Reference lab, Delhi, a CAP (7171001) Accredited, ISO 9001:2015 (FS60411) & ISO 27001:2013 (616691) Certified laboratory.
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)*439854467*
+.
+Page 10 of 10
+
+
