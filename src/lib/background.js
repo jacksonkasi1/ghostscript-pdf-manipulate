@@ -124,3 +124,68 @@ export function _processPDF(
   };
   xhr.send();
 }
+
+export function _extractPDFText(
+  dataStruct,
+  responseCallback,
+  progressCallback,
+  statusUpdateCallback
+) {
+  // Define Ghostscript arguments for text extraction
+  const ghostscriptArgs = [
+    "-sDEVICE=txtwrite", // Text extraction device
+    "-dNOPAUSE",
+    "-dQUIET",
+    "-dBATCH",
+    "-sOutputFile=output.txt",
+    "input.pdf",
+  ];
+
+  // Download the PDF data first
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", dataStruct.pdfDataURL);
+  xhr.responseType = "arraybuffer";
+  xhr.onload = function () {
+    // Release the URL
+    window.URL.revokeObjectURL(dataStruct.pdfDataURL);
+
+    // Set up EMScripten environment
+    Module = {
+      preRun: [
+        function () {
+          const FS = window.FS;
+          FS.writeFile("input.pdf", new Uint8Array(xhr.response));
+        },
+      ],
+      postRun: [
+        function () {
+          const FS = window.FS;
+          const uarray = FS.readFile("output.txt", { encoding: "utf8" }); // Extracted text content
+          responseCallback({ text: uarray });
+        },
+      ],
+      arguments: ghostscriptArgs,
+      print: function (text) {
+        statusUpdateCallback(text);
+      },
+      printErr: function (text) {
+        statusUpdateCallback("Error: " + text);
+        console.error(text);
+      },
+      setStatus: function (text) {
+        if (!Module.setStatus.last) Module.setStatus.last = { time: Date.now(), text: "" };
+        if (text === Module.setStatus.last.text) return;
+        const now = Date.now();
+        Module.setStatus.last.time = now;
+        Module.setStatus.last.text = text;
+        progressCallback(true, 0, 0); // Indicate that extraction is done
+        statusUpdateCallback(text);
+      },
+      totalDependencies: 0,
+    };
+    Module.setStatus("Extracting text...");
+    window.Module = Module;
+    loadScript();
+  };
+  xhr.send();
+}
