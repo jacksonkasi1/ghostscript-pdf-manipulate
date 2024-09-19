@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./App.css";
 import { _processPDF } from "./lib/background.js";
-import { ExtractContent } from "./Component/ExtractContent";
+// import { ExtractContent } from "./Component/ExtractContent";
 
 function loadPDFData(response, filename) {
   return new Promise((resolve, reject) => {
@@ -110,7 +110,7 @@ function App() {
         This tool allows you to <strong>compress</strong>, <strong>convert to grayscale</strong>, or <strong>convert to CMYK</strong> your PDF files directly in your browser using <a target="_blank" href="https://ghostscript.com/">Ghostscript</a> and <a target="_blank" href="https://webassembly.org/">WebAssembly</a>.
       </p>
 
-      <ExtractContent />
+      {/* <ExtractContent /> */}
 
       <form onSubmit={onSubmit} className="form">
         <div className="form-group">
